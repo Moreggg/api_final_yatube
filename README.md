@@ -45,3 +45,10 @@ python3 manage.py migrate
 ```
 python3 manage.py runserver
 ```
+
+## Примеры запросов:
+Получить список всех публикаций. При указании параметров limit и offset выдача работает с пагинацией.
+
+```
+GET /api/v1/posts/
+```
