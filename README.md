@@ -76,3 +76,9 @@ GET /api/v1/follow/
 POST /api/v1/follow/
 ```
 
+```
+{
+  "following": "string"
+}
+```
+
