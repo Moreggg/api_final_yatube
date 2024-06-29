@@ -10,7 +10,7 @@ git clone https://github.com/Moreggg/api_final_yatube.git
 cd api_final_yatube
 ```
 
-
+Cоздать и активировать виртуальное окружение:
 ```
 python3 -m venv env
 ```
