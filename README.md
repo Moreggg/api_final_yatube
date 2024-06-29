@@ -55,6 +55,13 @@ GET /api/v1/posts/
 ```
 POST /api/v1/posts/
 ```
+```
+{
+  "text": "string",
+  "image": "string",
+  "group": 0
+}
+```
 Получение списка доступных сообществ.
 ```
 GET /api/v1/groups/
