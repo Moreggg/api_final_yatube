@@ -66,7 +66,7 @@ python3 manage.py runserver
 ```
 GET /api/v1/posts/
 ```
-Response samples:
+Response sample:
 ```
 {
   "count": 123,
@@ -96,7 +96,7 @@ Payload:
   "group": 0
 }
 ```
-Response samples
+Response sample
 ```
 {
   "id": 0,
@@ -110,6 +110,17 @@ Response samples
 Получение списка доступных сообществ.
 ```
 GET /api/v1/groups/
+```
+Response sample
+```
+[
+  {
+    "id": 0,
+    "title": "string",
+    "slug": "^-$",
+    "description": "string"
+  }
+]
 ```
 Возвращает все подписки пользователя, сделавшего запрос. Анонимные запросы запрещены.
 Возможен поиск по подпискам по параметру search
