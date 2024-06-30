@@ -154,3 +154,8 @@ POST /api/v1/follow/
   "following": "string"
 }
 ```
+
+## Команда проекта
+
+Евгений чередниченко 
+https://github.com/Moreggg
