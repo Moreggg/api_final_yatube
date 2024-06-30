@@ -127,6 +127,15 @@ Response sample
 ```
 GET /api/v1/follow/
 ```
+Response sample
+```
+[
+  {
+    "user": "string",
+    "following": "string"
+  }
+]
+```
 Подписка пользователя от имени которого сделан запрос на пользователя переданного в теле запроса. Анонимные запросы запрещены.
 ```
 POST /api/v1/follow/
