@@ -66,7 +66,7 @@ python3 manage.py runserver
 ```
 GET /api/v1/posts/
 ```
-Пример ответа:
+Response samples:
 ```
 {
   "count": 123,
@@ -88,9 +88,21 @@ GET /api/v1/posts/
 ```
 POST /api/v1/posts/
 ```
+Payload:
 ```
 {
   "text": "string",
+  "image": "string",
+  "group": 0
+}
+```
+Response samples
+```
+{
+  "id": 0,
+  "author": "string",
+  "text": "string",
+  "pub_date": "2019-08-24T14:15:22Z",
   "image": "string",
   "group": 0
 }
