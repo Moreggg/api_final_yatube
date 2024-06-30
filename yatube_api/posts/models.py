@@ -22,6 +22,9 @@ class Post(models.Model):
         null=True, on_delete=models.CASCADE,
     )
 
+    class Meta:
+        ordering = ('pub_date',)
+
     def __str__(self):
         return self.text
 
@@ -40,10 +43,9 @@ class Follow(models.Model):
     user = models.ForeignKey(
         User,
         on_delete=models.CASCADE,
-        related_name='followers'
+        related_name='follows'
     )
     following = models.ForeignKey(
         User,
         on_delete=models.CASCADE,
-        related_name='follows'
     )
