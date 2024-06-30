@@ -66,7 +66,7 @@ python3 manage.py runserver
 ```
 GET /api/v1/posts/
 ```
-Response sample:
+Пример ответа:
 ```
 {
   "count": 123,
@@ -88,7 +88,7 @@ Response sample:
 ```
 POST /api/v1/posts/
 ```
-Payload:
+Пример запроса:
 ```
 {
   "text": "string",
@@ -96,7 +96,7 @@ Payload:
   "group": 0
 }
 ```
-Response sample
+Пример ответа:
 ```
 {
   "id": 0,
@@ -111,7 +111,7 @@ Response sample
 ```
 GET /api/v1/groups/
 ```
-Response sample
+Пример ответа:
 ```
 [
   {
@@ -127,7 +127,7 @@ Response sample
 ```
 GET /api/v1/follow/
 ```
-Response sample
+Пример ответа:
 ```
 [
   {
@@ -140,10 +140,17 @@ Response sample
 ```
 POST /api/v1/follow/
 ```
-
+Пример запроса:
 ```
 {
   "following": "string"
 }
 ```
 
+Пример ответа:
+```
+{
+  "user": "string",
+  "following": "string"
+}
+```
