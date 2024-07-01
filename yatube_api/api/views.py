@@ -6,7 +6,7 @@ from rest_framework.permissions import (IsAuthenticatedOrReadOnly,
 from .serializers import (PostSerializer, CommentSerializer,
                           GroupSerializer, FollowSerializer)
 from .permissions import AuthorOrReadOnly
-from posts.models import Post, Group, User
+from posts.models import Post, Group
 
 
 class FollowList(generics.ListCreateAPIView):
@@ -19,11 +19,7 @@ class FollowList(generics.ListCreateAPIView):
         return self.request.user.follows.all()
 
     def perform_create(self, serializer):
-        user = self.request.user
-        following = get_object_or_404(
-            User, username=self.request.data.get('following')
-        )
-        serializer.save(user=user, following=following)
+        serializer.save(user=self.request.user)
 
 
 class GroupViewSet(viewsets.ReadOnlyModelViewSet):
